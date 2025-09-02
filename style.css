@@ -1,0 +1,100 @@
+/* Faz o body ocupar 100% da tela e empurra o rodapé para o fim */
+html, body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Reset básico para remover margens e paddings padrões */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo geral do corpo */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Cabeçalho fixo com menu */
+header {
+  background: #4c71b4;
+  color: #fff;
+  padding: 15px 20px;
+  position: sticky; /* fica fixo no topo */
+  top: 0;
+}
+
+/* Título do site */
+header h1 {
+  margin-bottom: 10px;
+}
+
+/* Menu de navegação */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Seções principais */
+section {
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+/* Estilo do formulário */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form label {
+  font-weight: bold;
+}
+
+form input, form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px; /* deixa arredondado */
+  font-size: 1em;
+}
+
+form button {
+  background: #4c71b4;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+form button:hover {
+  background: #324d80;
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #4c71b4;
+  color: #fff;
+  margin-top: auto; /* empurra o rodapé para o fim da tela */
+}
